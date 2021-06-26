@@ -71,7 +71,7 @@ bot.action('POP',(ctx)=>{
 
 //help
 
-bot.command('/bantuan',(ctx)=>{
+bot.command('/help',(ctx)=>{
     ctx.reply(`Hello <b>${ctx.from.first_name}</b> you can send me files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`,{
         parse_mode:'HTML',
         reply_markup:{
