@@ -36,11 +36,11 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>I will store files for you and give sharable links .I can also make the files available for all users</b>`,{
+        ctx.reply(`<b>Join our Channel and Group to get more videos.</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
-                    [{text:'Search',switch_inline_query:''},{text:'Link',callback_data:'POP'}]
+                    [{text:'Channel',url:'t.me/palingviral'},{text:'Group',url:'t.me/palingviralgrup'}]
                 ]
             }
         })
@@ -71,7 +71,7 @@ bot.action('POP',(ctx)=>{
 
 //help
 
-bot.command('/help',(ctx)=>{
+bot.command('/bantuan',(ctx)=>{
     ctx.reply(`Hello <b>${ctx.from.first_name}</b> you can send me files and i will store and share link for that file to be used inside telegram\nYou can also use me for searching files contributed by various users\n\n(<code>Consider this as an initial version after fixing certain bugs we will make this bot opensource</code>)`,{
         parse_mode:'HTML',
         reply_markup:{
