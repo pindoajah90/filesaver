@@ -36,11 +36,11 @@ bot.start(async(ctx)=>{
     //welcoming message on /start and if there is a query available we can send files
 
     if(length == 1){
-        ctx.reply(`<b>Join our Channel and Group to get more videos.</b>`,{
+        ctx.reply(`<b>I will store files for you and give sharable links .I can also make the files available for all users</b>`,{
             parse_mode:'HTML',
             reply_markup:{
                 inline_keyboard:[
-                    [{text:'Channel',url:'t.me/palingviral'},{text:'Group',url:'t.me/palingviralgrup'}]
+                    [{text:'Search',switch_inline_query:''},{text:'Link',callback_data:'POP'}]
                 ]
             }
         })
